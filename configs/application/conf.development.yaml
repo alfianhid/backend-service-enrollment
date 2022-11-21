@@ -1,0 +1,28 @@
+server:
+  port: port
+  debug: true
+  read_timeout_seconds: 300
+  write_timeout_seconds: 300
+
+application:
+  min_password_strength: 0
+  swagger_ui_path: third_party/swaggerui/dist
+
+keycloaks:
+  realm: edm
+  client_secret: demo
+  cliend_id: edmportal
+  server: http://localhost:port
+  user_admin: admin
+  pass_admin: admin
+  realm_admin: master
+
+database:
+  dialect: mysql
+  user: root
+  password:
+  name: portaledmxyz
+  protocol: tcp
+  host: localhost
+  port: port
+  settings: tls=false&charset=utf8&parseTime=True&loc=Local&autocommit=true&timeout=20s
